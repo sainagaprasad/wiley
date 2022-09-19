@@ -1,0 +1,31 @@
+Multi Threading
+it can be achieved by
+1.runnable interface
+2.thread class
+
+life cycle of thread
+	1.thread is instantiated : new thread()
+	2.putting the thread into ready pool : start() -> this is where the stack of the thread is created
+	3.thread starts executing : run() -> invoked by jvm
+										 behavior is controlled by operating system
+	4.thread pauses/blocks itself so that the other threads gets a chance to execute
+	5.sleep(),wait(),wait(time),i/o blocking,delay : methods used to stop or pause the thread
+	6.notify(),notifyall() : resume the thread
+	7.terminating the thread
+
+Interview Questions
+1. relation between start and run
+2. how to use runnable explicitly
+3. 
+
+priority of threads:
+0-lowest
+11/10/9/8 : highest
+it can also have enum rated values : min,max,norm priorities
+
+yeild: give processing to other thread of equal priority than the currently executing thread.if there is none current one continues
+
+these are not thread methods these are object methods
+wait(); wait(time);
+notify(); :-> notifying the blocked connected threads
+notify all(); :-> notifying all the connected blocked threads
