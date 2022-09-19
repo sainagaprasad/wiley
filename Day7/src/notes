@@ -1,0 +1,3 @@
+String is an immutable object
+it is a first class object
+it behaves like primitives and you do not need new keyword always to create object
