@@ -1,0 +1,18 @@
+
+ Character heirarchy
+ file writer
+ file reader
+
+Byte heirarchy
+fileoutputstream
+fileinputstream
+
+Serialization
+Storing the object in the file
+object must implement serializable
+object
+fileoutputstream
+
+deserialisation
+file inputstream
+objectinputstream
