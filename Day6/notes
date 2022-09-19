@@ -1,0 +1,40 @@
+/*
+ * Exception: program terminates abruptly
+ * can be solved using two ways
+ * traditional: if-else
+ * oops: 
+ * 		object->Throwable->Exception->error
+ */
+ try,catch,finally,throw,throws
+ 
+ handling the exception is not rectifying it but its use is to 
+ 	1.not terminate the program abruptly
+ 	2.other parts of program which are not connected should not br impacted
+ 	3.if exception accurs, it nust be gracefully handled using proper msgs
+ 
+ 
+ types of exception
+ 1.Checked    : checked at compilation time. developer is forced to write the code in the exception handling block
+ 2.Unchecked  : checked at runtime. writing exception handling block  is optional
+ 
+ how to handle exception
+ 1. put the suspicious block in try block
+ 2. followed by that add the catch block to catch the purticular exception and work on it there 
+ 
+ we can have nested try blocks
+ cascading of exceptions:	 single block of try can have multiple exceptions
+ 
+ finally always executes irrespective of whether exception occurs or not
+ 
+ finally cannot be executed only in one case if there is system.exit(0)
+ 
+ try and finally blocks executes in different threads so there is guarantee in sequence
+ 
+ when i know that my method throws some exception but i don't want to handle 
+ it but instead i want my client to deal with it this is where throws keyword is used
+ 
+ throw is used as user defined exception
+ 
+ when we have multiple catch blocks then remember the heirarchy in mind. as we go broader
+  the exception should be bigger
+ which means when we have multiple catch blocks we should not use generic exception in the starting one
